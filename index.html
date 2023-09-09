@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modulul 2 - Lectia 4</title>
     <style>
+        html {
+            font-size: 10px;
+        }
+
         body {
             font-size: 20px;
         }
 
         p {
-            font-size: 40px;
+            font-size: 2em;
+            /* 2em = 2 * 20px = 40px */
             font-weight: 700;
             font-style: italic;
             font-family: 'Courier New', Courier, monospace;
+        }
+
+        p::first-letter {
+            font-size: 70px;
+            color: #ff0000;
+        }
+
+        p::selection {
+            color: #fff;
+            background-color: #0000ff;
         }
     </style>
 </head>
